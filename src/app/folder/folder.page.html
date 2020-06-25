@@ -15,7 +15,12 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-slides
+      [options]="{ spaceBetween: 30, effect: 'fade', pagination: { el: '.swiper-pagination', clickable: true }}"
+    >
+      <ion-slide><h1>This</h1></ion-slide>
+      <ion-slide><h1>should</h1></ion-slide>
+      <ion-slide><h1>fade</h1></ion-slide>
+    </ion-slides>
   </div>
 </ion-content>
